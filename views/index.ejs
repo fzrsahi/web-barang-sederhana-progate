@@ -13,20 +13,15 @@
     <div class="container">
       <div class="container-header">
         <h1>Daftar belanjaan</h1>
+        <a href="/new" class="new-button">+ Tambahkan</a>
       </div>
       <div class="index-table-wrapper">
         <div class="table-head">
           <span class="id-column">ID</span>
           <span>Item</span>
         </div>
-        <!-- Gunakan EJS untuk mendefinisikan constant item -->
         
         <ul class="table-body">
-          <% const items = [
-            { id : 1 , name : ' kentang ' } ,
-            { id : 2 , name : ' wortel ' } ,
-            { id : 3 , name : ' bawang ' } ,
-          ]; %>
           <% items.forEach((item) => { %>
             <li>
               <span class="id-column">
